@@ -18,8 +18,7 @@ class Neighborhood {
 
   customers() {
     let deliveryList = this.deliveries().map(function(delivery){return delivery.customer()}.bind(this))
-    console.log(deliveryList)
-    return this.deliveries()
+    return [...new Set(deliveryList)]
 
   }
 }
