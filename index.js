@@ -17,7 +17,7 @@ class Neighborhood {
   }
 
   customers() {
-    
+
   }
 }
 
@@ -62,7 +62,7 @@ class Delivery {
     store.deliveries.push(this)
   }
   meal(){
-
+    store.meals.find(function(meal){return meal.id = this.mealId}.bind(this))
   }
   customer(){
 
