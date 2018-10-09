@@ -17,7 +17,7 @@ class Neighborhood {
   }
 
   customers() {
-    let deliveryList = this.deliveries().map(function(delivery){return delivery.neighborhoodId=== this.id}.bind(id))
+    let deliveryList = this.deliveries().map(function(delivery){return delivery.neighborhoodId=== this.id}.bind(this))
     console.log(deliveryList)
     return this.deliveries()
 
