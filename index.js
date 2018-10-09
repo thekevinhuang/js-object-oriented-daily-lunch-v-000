@@ -38,6 +38,10 @@ class Customer {
     return deliveryList
   }
 
+  totalSpent() {
+    
+  }
+
 }
 
 class Meal {
