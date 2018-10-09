@@ -35,7 +35,7 @@ class Customer {
   }
   meals() {
     let deliveryList = this.deliveries().map(function(delivery){return delivery.meal()}.bind(this))
-    return [...new Set(deliveryList)]
+    return deliveryList
   }
 
 }
