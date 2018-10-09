@@ -62,10 +62,10 @@ class Delivery {
     store.deliveries.push(this)
   }
   meal(){
-    return store.meals.find(function(meal){return meal.id = this.mealId}.bind(this))
+    return store.meals.find(function(meal){return meal.id === this.mealId}.bind(this))
   }
   customer(){
-
+    return store.customers.find(function(customer){return customer.id === this.customerId}.bind(this))
   }
   neighborhood(){
 
