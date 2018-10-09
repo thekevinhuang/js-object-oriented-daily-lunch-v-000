@@ -57,7 +57,7 @@ class Meal {
     return [...new Set(deliveryList)]
   }
 
-  byPrice(){
+  static byPrice(){
     return store.meals.sort(function(a,b){a.price-b.price})
   }
 
