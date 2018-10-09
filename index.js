@@ -47,7 +47,7 @@ class Meal {
     this.id = ++mealId
     store.meals.push(this)
   }
-  
+
   deliveries(){
     return store.deliveries.filter(function(delivery){return delivery.mealId === this.id }.bind(this))
   }
@@ -60,7 +60,7 @@ class Meal {
   byPrice(){
     return store.meals.sort(function(a,b){a.price-b.price})
   }
-  
+
 }
 
 class Delivery {
