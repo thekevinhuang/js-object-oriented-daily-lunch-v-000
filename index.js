@@ -17,7 +17,7 @@ class Neighborhood {
   }
 
   customers() {
-
+    return this.deliveries.map(function(delivery){return delivery.customer()})
   }
 }
 
