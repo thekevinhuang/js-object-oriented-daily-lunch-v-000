@@ -17,7 +17,10 @@ class Neighborhood {
   }
 
   customers() {
+    let deliveryList = this.deliveries()
+    console deliveryList
     return this.deliveries()
+    
   }
 }
 
