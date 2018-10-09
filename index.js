@@ -18,9 +18,9 @@ class Neighborhood {
 
   customers() {
     let deliveryList = this.deliveries()
-    console deliveryList
+    console.log(deliveryList)
     return this.deliveries()
-    
+
   }
 }
 
