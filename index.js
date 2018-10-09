@@ -52,7 +52,8 @@ class Meal {
   }
 
   customers(){
-
+    let deliveryList = this.deliveries().map(function(delivery){return delivery.customer()}.bind(this))
+    return [...new Set(deliveryList)]
   }
 }
 
